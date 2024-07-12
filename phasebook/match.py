@@ -20,9 +20,9 @@ def match(match_id):
 
 
 def is_match(fave_numbers_1, fave_numbers_2):
-    d = {num: num for num in fave_numbers_1}
+    num_keys = {num: num for num in fave_numbers_1}
     for number in fave_numbers_2:
-        if (not d.get(number)):
+        if (not num_keys.get(number)):
             return False
 
     return True
